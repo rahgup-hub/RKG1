@@ -1,0 +1,59 @@
+{
+  "server_info": {
+    "version": "8.6.1",
+    "uptime": "3 days 4 hours 12 minutes",
+    "host": "ems-server-1",
+    "tcp_port": 7222,
+    "ssl_port": 7243,
+    "client_count": 14,
+    "messages_in": 143200,
+    "messages_out": 141987
+  },
+  "queues": [
+    {
+      "name": "queue.sample.orders",
+      "pending_messages": 5,
+      "max_pending_messages": 1000,
+      "consumer_count": 2,
+      "durable": true
+    },
+    {
+      "name": "queue.sample.logs",
+      "pending_messages": 0,
+      "consumer_count": 1,
+      "durable": false
+    }
+  ],
+  "topics": [
+    {
+      "name": "topic.sample.news",
+      "subscriber_count": 3,
+      "durable_subscribers": [
+        {
+          "name": "DurableSub1",
+          "client_id": "NewsProcessorApp",
+          "pending_messages": 20
+        }
+      ]
+    },
+    {
+      "name": "topic.sample.alerts",
+      "subscriber_count": 2,
+      "durable_subscribers": []
+    }
+  ],
+  "connections": [
+    {
+      "client_id": "App1",
+      "user": "admin",
+      "connected_since": "2025-04-28T14:32:01Z",
+      "ip_address": "192.168.1.101"
+    },
+    {
+      "client_id": "App2",
+      "user": "service_user",
+      "connected_since": "2025-04-29T10:15:23Z",
+      "ip_address": "192.168.1.102"
+    }
+  ]
+}

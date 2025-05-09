@@ -1,0 +1,2 @@
+Based on this Tibco ems configuration data, Please create corresponding kafka configurations for each topic ,queues  and sever configuration which  cover all the required configuration. Please ensure there is one line per topic or queue . use this as sample "Create topic named sample with 1 partition and replication factor 1" for generation
+Please make sure the output is well formatted and each topic/queue configuration is in separate line. Please don't include "\n"
